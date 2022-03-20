@@ -6,6 +6,9 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "db:dev:rm": "docker-compose rm -s -f -v dev-db",
+    "db:dev:up": "docker-compose up -d dev-db",
+    "db:dev:restart": "yarn db:dev:rm && yarn db:dev:up",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
