@@ -10,6 +10,6 @@ export class AuthDTO {
   @IsNotEmpty()
   password: string;
 
-  @Validate(ValidDocument)
-  document: string;
+  //   @Validate(ValidDocument)
+  //   document: string;
 }
