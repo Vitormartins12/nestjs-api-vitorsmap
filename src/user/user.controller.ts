@@ -1,8 +1,6 @@
 import {
   Controller,
   Get,
-  HttpCode,
-  HttpStatus,
   UseGuards,
 } from '@nestjs/common';
 import { User } from '@prisma/client';
